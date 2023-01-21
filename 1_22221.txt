@@ -343,4 +343,76 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Sumanraj-10/New2023.git
    6c12618..6c4aa12  main -> main
 
-C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.73 KiB | 26.00 KiB/s, done.
+From https://github.com/Sumanraj-10/New2023
+   6c4aa12..20508a1  main       -> origin/main
+Updating 6c4aa12..20508a1
+Fast-forward
+ 1_22221.txt | 346 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 346 insertions(+)
+ create mode 100644 1_22221.txt
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git branch sub
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git branch
+* main
+  sub
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git commit -m "new branch sub"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git checkout sub
+Switched to branch 'sub'
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git add .
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git commit -m "change add in sub branch"
+[sub 3d756dc] change add in sub branch
+ 1 file changed, 1 insertion(+)
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git checkout sub
+Switched to branch 'sub'
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git branch
+  main
+* sub
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git merge sub
+Updating 20508a1..3d756dc
+Fast-forward
+ sum1.java | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\E-Lab Staff\Documents\Visual Studio 2010\Projects\2019csc046\New folder\New2023>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Sumanraj-10/New2023.git
+   20508a1..3d756dc  main -> main
+

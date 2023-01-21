@@ -4,5 +4,6 @@ class sum1{
          int b = 7;
         System.out.println(a+b);
         //sum function added
+        //sum1 added
     }
 }
